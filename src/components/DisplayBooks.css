@@ -17,20 +17,21 @@
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    
+    color:  #404040;;
 }
 .imageOfBooks{
     margin-top:10px;
 }
 .description-paragraph{
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 20px;
     margin-top: 15px;
     text-align: justify;
     font-style: italic;
+    
 }
 .classic-paragraph{
     font-size: 20px;
     margin-top:10px;
     font-style: italic;
+    font-weight: bolder;
 }

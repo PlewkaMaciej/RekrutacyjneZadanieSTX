@@ -9,7 +9,7 @@ function Library() {
 
     return (
         <>
-           <DisplayBooks books={books}/>
+           <DisplayBooks setBooks={setBooks} books={books}/>
 
         </>
     )

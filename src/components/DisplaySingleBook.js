@@ -1,8 +1,10 @@
 import Description from './Description';
-
-function DisplaySingleBook({ singleBook, index, books }) {
+import AddBookToYourLibrary from './AddBookToYourLibrary';
+function DisplaySingleBook({ singleBook, index,books,setBooks}) {
   
     return (
+        <>
+        
         <div className="singleBookContainer" key={index}>
             {"imageLinks" in singleBook.volumeInfo && ((
                 <img className="imageOfBooks" alt="booksImage" src={singleBook.volumeInfo.imageLinks.thumbnail}></img>
@@ -14,10 +16,12 @@ function DisplaySingleBook({ singleBook, index, books }) {
                 <>
                     <p className="classic-paragraph">Description:</p>
                     <Description bookDescription={singleBook.volumeInfo.description} shortedDescription={singleBook.volumeInfo.shortDescription}/>
+                    
                 </>
             )}
-
+<AddBookToYourLibrary  setBooks={setBooks} books={books} index={index}/>
         </div>
+        </>
     )
 }
 export default DisplaySingleBook;

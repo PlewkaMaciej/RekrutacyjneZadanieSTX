@@ -1,12 +1,16 @@
 import "./DisplayBooks.css"
 import DisplaySingleBook from "./DisplaySingleBook"
-function DisplayBooks({books}) {
+import ShowBooksFromYourLibrary from "./ShowBooksFromYourLibrary"
+function DisplayBooks({books,setBooks}) {
     return (
         <>
             {books && (
+                <>
+                <ShowBooksFromYourLibrary books={books} />
                 <div className="booksContainer">{books.items.map((singleBook, index) => {
-                    return <DisplaySingleBook books={books} singleBook={singleBook} index={index} key={index}/>
+                    return <DisplaySingleBook setBooks={setBooks} books={books} singleBook={singleBook} index={index} key={index}/>
                 })}</div>
+                </>
             )}
         </>
     )

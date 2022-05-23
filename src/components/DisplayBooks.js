@@ -2,26 +2,35 @@ import "./DisplayBooks.css"
 import DisplaySingleBook from "./DisplaySingleBook"
 import ShowBooksFromYourLibrary from "./ShowBooksFromYourLibrary"
 import { useEffect, useState } from 'react';
-function DisplayBooks({books,setBooks}) {
+function DisplayBooks({ books, setBooks }) {
     const [addedBooksToYourLibrary, setAddedBooksToYourLibrary] = useState([]);
-    useEffect(()=>{
-    },[addedBooksToYourLibrary])
+    const [inputForSearchBookValue, setInputForSearchBookValue] = useState([]);
+    useEffect(() => {
+    }, [addedBooksToYourLibrary])
+    const inputTextChange=(e)=>{
+      setInputForSearchBookValue(e.target.value.toLowerCase())
+    }
     return (
         <>
             {books && (
                 <>
-            
-                <div className="booksContainer">{books.items.map((singleBook, index) => {
-                    return <DisplaySingleBook setAddedBooksToYourLibrary={setAddedBooksToYourLibrary} addedBooksToYourLibrary={addedBooksToYourLibrary}  setBooks={setBooks} books={books} singleBook={singleBook} index={index} key={index}/>
-                })}
-               <ShowBooksFromYourLibrary addedBooksToYourLibrary={addedBooksToYourLibrary}/>
-                </div>
-                </>
+                    
+                        <div className="booksContainer"> 
+                        <label className="searchForInput" htmlFor="searchBook">Search for a book by title</label>
+
+                    <input onChange={inputTextChange} type="text" id="searchBook" 
+                         size="40"></input>
+                        {books.items.map((singleBook, index) => {
+                            return <DisplaySingleBook inputForSearchBookValue={inputForSearchBookValue} setAddedBooksToYourLibrary={setAddedBooksToYourLibrary} addedBooksToYourLibrary={addedBooksToYourLibrary} setBooks={setBooks} books={books} singleBook={singleBook} index={index} key={index} />
+                        })}
+                            <ShowBooksFromYourLibrary addedBooksToYourLibrary={addedBooksToYourLibrary} />
+                        </div>
+                    </>
             )}
-        </>
-    )
-}
-export default DisplayBooks
+                </>
+            )
+            }
+            export default DisplayBooks
 
 
 

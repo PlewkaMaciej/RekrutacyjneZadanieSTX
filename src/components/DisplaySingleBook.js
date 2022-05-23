@@ -1,6 +1,6 @@
 import Description from './Description';
 import AddBookToYourLibrary from './AddBookToYourLibrary';
-function DisplaySingleBook({ singleBook, index,books,setBooks}) {
+function DisplaySingleBook({ setAddedBooksToYourLibrary,singleBook, index,books,setBooks,addedBooksToYourLibrary}) {
   
     return (
         <>
@@ -19,7 +19,7 @@ function DisplaySingleBook({ singleBook, index,books,setBooks}) {
                     
                 </>
             )}
-<AddBookToYourLibrary  setBooks={setBooks} books={books} index={index}/>
+<AddBookToYourLibrary addedBooksToYourLibrary={addedBooksToYourLibrary} setAddedBooksToYourLibrary={setAddedBooksToYourLibrary} setBooks={setBooks} books={books} index={index}/>
         </div>
         </>
     )

@@ -4,12 +4,11 @@ const apiBooks = async (setBooks) => {
         .then((data) => {
             let newData = data
             newData.items.forEach((element, index) => {
-                newData.items[index].isInYourLibrary=false
+                newData.items[index].volumeInfo.isInYourLibrary=false
                 if (element.volumeInfo.description !== undefined) {
                     newData.items[index].volumeInfo.shortDescription = element.volumeInfo.description.substring(0, 200)
                 }
             })
-
             setBooks(newData)
         })
 }

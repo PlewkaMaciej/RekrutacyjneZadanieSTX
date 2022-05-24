@@ -1,7 +1,7 @@
+import '../../styles/stylesLibrary.css';
 import Description from './Description';
 import AddBookToYourLibrary from './AddBookToYourLibrary';
-function DisplaySingleBook({ setAddedBooksToYourLibrary, singleBook, index, books, setBooks, addedBooksToYourLibrary, inputForSearchBookValue }) {
-  
+function DisplaySingleBook({ setAddedBooksToYourLibrary, singleBook, index, books, setBooks, addedBooksToYourLibrary, inputForSearchBookValue }) { 
     return (
         <>
             {singleBook.volumeInfo.title.toLowerCase().includes(inputForSearchBookValue) &&

@@ -1,5 +1,5 @@
-import "./DisplayBooks.css"
-import DisplaySingleBook from "./DisplaySingleBook"
+import '../../styles/stylesLibrary.css';
+import DisplaySingleBook from "../SingleBook/DisplaySingleBook"
 import ShowBooksFromYourLibrary from "./ShowBooksFromYourLibrary"
 import { useEffect, useState } from 'react';
 function DisplayBooks({ books, setBooks }) {
@@ -14,7 +14,6 @@ function DisplayBooks({ books, setBooks }) {
         <>
             {books && (
                 <>
-                    
                         <div className="booksContainer"> 
                         <label className="searchForInput" htmlFor="searchBook">Search for a book by title</label>
 

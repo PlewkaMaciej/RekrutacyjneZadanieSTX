@@ -1,3 +1,4 @@
+import '../../styles/stylesLibrary.css';
 function  SingleBook({book,index}){
     return(
         <div className="singleBookContainer" key={index}>
@@ -13,7 +14,6 @@ function  SingleBook({book,index}){
                 <p className="description-paragraph">  {book.volumeInfo.description}</p>
             </>
         )}
-
     </div>
     )
 }

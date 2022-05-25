@@ -9,7 +9,7 @@ function DisplaySingleBook({ setAddedBooksToYourLibrary, singleBook, index, book
                     {"imageLinks" in singleBook.volumeInfo && ((
                         <img className="imageOfBooks" alt="booksImage" src={singleBook.volumeInfo.imageLinks.thumbnail}></img>
                     ))}
-                    <p className="classic-paragraph" > Title:  {singleBook.volumeInfo.title} </p>
+                    <p className="classic-title-paragraph" > Title:  {singleBook.volumeInfo.title} </p>
                     <p className="classic-paragraph"> Date of publication: {singleBook.volumeInfo.publishedDate}</p>
 
                     {"description" in singleBook.volumeInfo && (

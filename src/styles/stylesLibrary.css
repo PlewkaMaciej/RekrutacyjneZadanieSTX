@@ -94,3 +94,9 @@
 .your-added-books-paragraph{
     font-size: 16px;
 }
+.classic-title-paragraph{
+    font-size: 20px;
+    margin-top:10px;
+    font-weight: bolder;
+    padding: 40px;
+}

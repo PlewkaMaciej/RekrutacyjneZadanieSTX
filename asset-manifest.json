@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RekrutacyjneZadanieSTX/static/css/main.68ed62cd.css",
+    "main.js": "/RekrutacyjneZadanieSTX/static/js/main.5ffcb2d5.js",
+    "static/media/glyphicons-halflings-regular.svg": "/RekrutacyjneZadanieSTX/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
+    "static/media/glyphicons-halflings-regular.ttf": "/RekrutacyjneZadanieSTX/static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
+    "static/media/glyphicons-halflings-regular.woff": "/RekrutacyjneZadanieSTX/static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
+    "static/media/glyphicons-halflings-regular.eot": "/RekrutacyjneZadanieSTX/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
+    "static/media/glyphicons-halflings-regular.woff2": "/RekrutacyjneZadanieSTX/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
+    "index.html": "/RekrutacyjneZadanieSTX/index.html",
+    "main.68ed62cd.css.map": "/RekrutacyjneZadanieSTX/static/css/main.68ed62cd.css.map",
+    "main.5ffcb2d5.js.map": "/RekrutacyjneZadanieSTX/static/js/main.5ffcb2d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68ed62cd.css",
+    "static/js/main.5ffcb2d5.js"
+  ]
+}
